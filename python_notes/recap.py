@@ -1,3 +1,4 @@
+import random
 # #this is how to add notes.
 
 # print("This is my file.")
@@ -137,18 +138,74 @@
 # ]
 # #lists are easy, crate the list and print using the variable.
 # print(fav_songs)
-print(fav_songs[1])
-#this will only print the 2nd option in the list
-fav_songs[1] = "Lethat combination - The Wombats"
-#this updates the list, changing hey there delilah with Lethal combination. this all uses index position.
-print(len(fav_songs))
-#prints the number of things in the list.
-fav_songs.append("Welcome to the black parade - MY Chemical Romance")
-#append add another item to the end of the list.
-print(fav_songs)
-#using_.pop will remove an item from the list
-fav_songs.pop(2)
-#this will get rid of the 3rd option in the list: stan - eminem
-print(fav_songs)
-#prints the list without stan - eminem
+# print(fav_songs[1])
+# #this will only print the 2nd option in the list
+# fav_songs[1] = "Lethat combination - The Wombats"
+# #this updates the list, changing hey there delilah with Lethal combination. this all uses index position.
+# print(len(fav_songs))
+# #prints the number of things in the list.
+# fav_songs.append("Welcome to the black parade - MY Chemical Romance")
+# #append add another item to the end of the list.
+# print(fav_songs)
+# #using_.pop will remove an item from the list
+# fav_songs.pop(2)
+# #this will get rid of the 3rd option in the list: stan - eminem
+# print(fav_songs)
+# #prints the list without stan - eminem
+
+#for loops allows a list to run a sequence one by one when running a program once.
+# fav_songs = [
+#     "Numb - Lincoln Park",
+#     "Hey there delilah - Plain White T's",
+#     "Stan - Eminem"
+# ]
+# #i is the number of loops which equates to the number in the sequence. the code will loop for i.
+# for i in fav_songs:
+#     print(i)
+# #
+# for i in fav_songs:
+#     print("That's a great song")
+# #
+# for i in range(10):
+#     print(i)
+# #this will give the values 0-9. range only needs one perameter to work.
+# for i in range(2,10,2)
+# #this will also work for range in the exact same way.the first value is the starting number, this is the number the sequence will start with. the second value is the stopping number meaning it wont go up to that second number.
+# # the third value equates to the steps it goes up. in this case, it goes up by 2. therefore it will return 2,4,6,8
+# for i in range(10,-1,-1):
+#     print(i)
+# # this show a sequence decreasing in value by 1 until it hits -1. it will not print -1
+#Start:Stop:Step (10,-1,-1)
+
+import numbers
+from xml.dom.expatbuilder import theDOMImplementation
+
+
+num = 0
+
+while num < 10:
+    num += 1
+    print(num)
+
+# num 1 - my number
+# num 2 - computer's num
+
+# compare them 
+
+# while they dont match computer guesses again 
+# when they match, say "well done"
+
+my_num = 13
+comp_num = random.randint(1,50)
+#my number stays the same. comp num is randomly generated. as long as the same code is also put into the while loop
+# the number will continue changing until it hits the same number as "my_num".
+while my_num != comp_num:
+    print(f"the numbers {my_num} and {comp_num} do not match")
+    comp_num = random.randint(1,50)
+print(f"the numbers {my_num} and {comp_num} do not match")
+#the code will loop untill it matches my number so it can go on for a long time or a short time.
+
+
+
+
 
