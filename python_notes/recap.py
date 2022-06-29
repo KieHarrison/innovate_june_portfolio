@@ -10,19 +10,20 @@ import random
 # print("this is a string for displaying characters")
 # print("1234") #this is a string
 # print(1234+1) #this is an integer
-# print(12.34)
-# print(True)
-# print(False)
-# print(None)
+# print(12.34) #tjis is a floating point
+# print(True) #this is a boolean
+# print(False) #this is a boolean
+# print(None) #this is none
 
+#len shows the amount of characters in a string
 # print(len(greeting))
-
-# print(greeting[1])
-
+#this shows the 1st index position (2nd character) in the string printed
+# print("greeting"[1])
+#greeting.upper will put the str attatched to greeting in upper case
 # print(greeting.upper())
-
+#this will print HELLO in lower case
 # print("HELLO".lower())
-
+#this prints the first letter as upper case and the rest lower case.
 # print("hello EVERYONE. This is innovate".capitalize())
 
 # 
@@ -60,11 +61,11 @@ import random
 # print(balance)
 # #balance =+amount is wrong as the + is refering to the integer "amount" as a positive
 
-#input is used when a variable/input is wanted to be given by the user
+# # input is used when a variable/input is wanted to be given by the user
 # answer=input("what is your name?")
 # #answer is a variable where, here, it is attached to input. this allow the user to assign an input to the variable "answer"
 # print(answer)
-#\n is used to create a new line. when used with input, it forces the user to input their answer on the line below the question.
+# # \n is used to create a new line. when used with input, it forces the user to input their answer on the line below the question.
 # answer=input("what is your name? \n")
 
 # music = "classical"
@@ -118,7 +119,7 @@ import random
 # else:
 #     print("Its another working day")
 
-#def = define
+# # def = define. this is used if you want to create code that you can engage at anytime.
 # def light_switch():
 #     print("Switching the lights.")
 #     print("Activating the lights.")
@@ -130,7 +131,7 @@ import random
 # #you have to enter the line below. this gives the perameters a value.
 # cash_withdraw(300,123445775)
 
-#list are written with square brackets.
+# # list are written with square brackets.
 # fav_songs = [
 #     "Numb - Lincoln Park",
 #     "Hey there delilah - Plain White T's",
@@ -139,21 +140,21 @@ import random
 # #lists are easy, crate the list and print using the variable.
 # print(fav_songs)
 # print(fav_songs[1])
-# #this will only print the 2nd option in the list
+# #^this will only print the 2nd option in the list
 # fav_songs[1] = "Lethat combination - The Wombats"
-# #this updates the list, changing hey there delilah with Lethal combination. this all uses index position.
+# #^this updates the list, changing hey there delilah with Lethal combination. this all uses index position.
 # print(len(fav_songs))
-# #prints the number of things in the list.
+# #^prints the number of things in the list.
 # fav_songs.append("Welcome to the black parade - MY Chemical Romance")
-# #append add another item to the end of the list.
+# #^append - add another item to the end of the list.
 # print(fav_songs)
 # #using_.pop will remove an item from the list
 # fav_songs.pop(2)
 # #this will get rid of the 3rd option in the list: stan - eminem
 # print(fav_songs)
-# #prints the list without stan - eminem
+# # #prints the list without stan - eminem
 
-#for loops allows a list to run a sequence one by one when running a program once.
+# # for loops allows a list to run a sequence one by one when running a program once.
 # fav_songs = [
 #     "Numb - Lincoln Park",
 #     "Hey there delilah - Plain White T's",
@@ -162,38 +163,35 @@ import random
 # #i is the number of loops which equates to the number in the sequence. the code will loop for i.
 # for i in fav_songs:
 #     print(i)
-# #
+# #printing i in this for loop will print fav_songs list
 # for i in fav_songs:
 #     print("That's a great song")
-# #
+# #for each song on the list, it will print thats a great song after each one.
 # for i in range(10):
 #     print(i)
-# #this will give the values 0-9. range only needs one perameter to work.
+# #this will give the values 0-9. range only needs one perameter to work. only the first 10 options in the list will print.
 # for i in range(2,10,2)
 # #this will also work for range in the exact same way.the first value is the starting number, this is the number the sequence will start with. the second value is the stopping number meaning it wont go up to that second number.
 # # the third value equates to the steps it goes up. in this case, it goes up by 2. therefore it will return 2,4,6,8
 # for i in range(10,-1,-1):
 #     print(i)
 # # this show a sequence decreasing in value by 1 until it hits -1. it will not print -1
-#Start:Stop:Step (10,-1,-1)
-
-import numbers
-from xml.dom.expatbuilder import theDOMImplementation
+# # Start:Stop:Step (10,-1,-1)
 
 
-num = 0
+# #num is a variable set to 0
+# num = 0
+# while num < 10:
+#     num += 1
+#     print(num)
 
-while num < 10:
-    num += 1
-    print(num)
+# # num 1 - my number
+# # num 2 - computer's num
 
-# num 1 - my number
-# num 2 - computer's num
+# # compare them 
 
-# compare them 
-
-# while they dont match computer guesses again 
-# when they match, say "well done"
+# # while they dont match computer guesses again 
+# # when they match, say "well done"
 
 # my_num = 13
 # comp_num = random.randint(1,50)
