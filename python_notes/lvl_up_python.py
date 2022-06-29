@@ -82,8 +82,10 @@ add_up()
 # this is successful code that will not give you an error.
 
 light = False
-#the line above is a global variable and is needed
+#the line above is a global variable and is needed. this is 
 def light_switch():
+    # ##light = False##
+    #^^If this is the first line of the function. whenver the function runs, light will always be set to false.
     global light
     #this lets pythin know that the initial variable is global and
     #it changes the local variable to global.
@@ -99,18 +101,20 @@ light_switch()
 light_switch()
 # global is only used when you want to define a variable as global so it wont be local.
 
+###TUPLES###
 # tuples use normal brackets while lists use square brackets.
 # this is a list- can be changed with methods:insert, remove, append, pop and more which change the lists properties.
 even_nums =[2,4,6,8,10]
 even_nums.append(12)
 even_nums.insert(0,0)
+#insert will put the number 0 at the index position 0 which is the 1st value in the list
 print(even_nums)
 #tuples are immutable meaning it can not change like a list.
 odd_nums=(1,3,5,7,9)
 odd_nums.append(11)
 print(odd_nums)
-# methods such as append(11) does not work on tuples.
-
+# methods such as append(11) does not work on tuples, it need square brackets for it to work []
+#tuples have a limited amount of methods that can be used on it.
 #slice notation: fav_songs list.
 fav_songs = [
     "Numb - Lincoln Park",
