@@ -27,7 +27,7 @@ countries = {
     "Spain":"Madrid",
     "Italy":"Rome"
 }
-#print the list/dictionary with contries to their capital
+#print the list/dictionary with countries to their capital
 print("These are countries with their correspoding capitals.")
 for i in countries.items():
     print(i)
@@ -57,7 +57,7 @@ fav_songs = [
     "Welcome to the black parade"
 ]
 print("this is a list of song names", fav_songs[::1])
-#create dictionaries for each song
+#create dictionaries individualy for each song
 numb = {
     "Artist":"Lincoln Park",
     "song name":"Numb",
@@ -108,4 +108,9 @@ else:
     for w in wttbp.items():
         print("Song 4", w ,"\n")
 
+#print like this because it prints verticle and it looks better.
+#if else statemnt was the easiest to do but is less efficient.
 # Come back, there is a lot to improve.
+
+
+
