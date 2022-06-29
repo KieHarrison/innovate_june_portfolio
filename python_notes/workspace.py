@@ -11,7 +11,6 @@ if val == 0:
     print(welcome,".", "there are an even amount of character in the welcome message as there are", num,"characters in the previous scentence")
 else:
     print(welcome, "there is an odd number of characters in the welcome message")
-this code works with both an even and an odd number of characters.
 # activity 2
 
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]

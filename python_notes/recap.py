@@ -195,15 +195,15 @@ while num < 10:
 # while they dont match computer guesses again 
 # when they match, say "well done"
 
-my_num = 13
-comp_num = random.randint(1,50)
-#my number stays the same. comp num is randomly generated. as long as the same code is also put into the while loop
-# the number will continue changing until it hits the same number as "my_num".
-while my_num != comp_num:
-    print(f"the numbers {my_num} and {comp_num} do not match")
-    comp_num = random.randint(1,50)
-print(f"the numbers {my_num} and {comp_num} do not match")
-#the code will loop untill it matches my number so it can go on for a long time or a short time.
+# my_num = 13
+# comp_num = random.randint(1,50)
+# #my number stays the same. comp num is randomly generated. as long as the same code is also put into the while loop
+# # the number will continue changing until it hits the same number as "my_num".
+# while my_num != comp_num:
+#     print(f"the numbers {my_num} and {comp_num} do not match")
+#     comp_num = random.randint(1,50)
+# print(f"the numbers {my_num} and {comp_num} do not match")
+# #the code will loop untill it matches my number so it can go on for a long time or a short time.
 
 
 

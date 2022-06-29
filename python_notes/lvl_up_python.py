@@ -1,3 +1,4 @@
+import random
 # #CASTING CONCEPT
 
 # print(int(5.9))
@@ -61,19 +62,98 @@
 
 
 #
-def add_up():
-    num1 = input("What is the first number you'd like to add up? \n ")
-    num2 = input("What is the seecond number you'd like to add up? \n ")
-#
-    try:
-        print(int(num1) + int(num2))
-    except:
-        print("Please use numbers only")
-        add_up()
-add_up()
+# def add_up():
+#     num1 = input("What is the first number you'd like to add up? \n ")
+#     num2 = input("What is the seecond number you'd like to add up? \n ")
+# #
+#     try:
+#         print(int(num1) + int(num2))
+#     except:
+#         print("Please use numbers only")
+#         add_up()
+# add_up()
 #this is successful code that will not give you an error.
 
+# light = False
+# #the line above is a global variable and is needed
+# def light_switch():
+#     global light
+#     #this lets pythin know that the initial variable is global and
+#     #it changes the local variable to global.
+#     if light:
+#         print("Whoa! It's bright in here")
+#         light = False
+#         #this is a local variable for light and is different from the global variable.
+#     #you can not change a global variable locally.
+#     else:
+#         print("Who turned out the lights?")
+#         light = True
+# light_switch()
+# light_switch()
+#global is only used when you want to define a variable as global so it wont be local.
 
+#tuples use normal brackets while lists use square brackets.
+#this is a list- can be changed with methods:insert, remove, append, pop and more which change the lists properties.
+# even_nums =[2,4,6,8,10]
+# even_nums.append(12)
+# even_nums.insert(0,0)
+# print(even_nums)
+# #tuples are immutable meaning it can not change like a list.
+# odd_nums=(1,3,5,7,9)
+# odd_nums.append(11)
+# print(odd_nums)
+#methods such as append(11) does not work on tuples.
+
+# #slice notation: fav_songs list.
+# fav_songs = [
+#     "Numb - Lincoln Park",
+#     "Hey there delilah - Plain White T's",
+#     "Stan - Eminem",
+#     "Welcome to the black parade - My chemical romance"
+# ]
+# #index position works from slice notation.start:stop:step
+# print(fav_songs[1:3:1])
+# #starts at index pos 1 and ends at index pos 2. it increases by 1 step.
+# #you can slice through the whole list with print(fav_songs[1:])
+# #print(fav_songs[1]): this is the start value. Without the colon it will print only the starting str.
+
+# #make a string variable
+# #if it reads forwards the same as backwards(palindrome)
+# #if it does say YES if it doesnt say no
+# test = "hello"
+# #
+# if test == test[::-1]:
+#     #it starts at the start, ends at the end and because of the -1, it will go backwards.
+#     print(f"Yes! {test} is a palindrome")
+# else:
+#     print("it is not a palindrome")
+
+# loop_run = True
+# while loop_run == True:
+#     print("This will run forever")
+#     loop_run=False
+
+
+num=random.randint(1,50)
+
+while num%2==0:
+    print("We like evem number! Go again.")
+print("Oh no! An odd number.")
+#this while loop will stop running when random num is odd.
+#it compares variables and runs under specific conditions.
+##################################################
+#this is  a while true loop which will always initialise.
+while True:
+    num=random.randint(1,50)
+    print(num)
+    if num%2==0:
+        print("We like evem number! Go again.")
+        continue
+    else:
+        print("Oh no! An odd number.")
+        break
+#This is always goin to start running.
+#this handles all situations. because of the if/else statement, it covers all inputs. while true
 
 
 
